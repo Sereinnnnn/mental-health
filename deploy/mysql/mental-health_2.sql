@@ -1,6 +1,6 @@
 /*
 SQLyog 企业版 - MySQL GUI v8.14 
-MySQL - 8.0.31 : Database - platform_test002
+MySQL - 8.0.31 : Database - mental-health_2
 *********************************************************************
 */
 

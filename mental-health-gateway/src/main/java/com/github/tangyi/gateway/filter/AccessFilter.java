@@ -49,10 +49,10 @@ public class AccessFilter extends ZuulFilter {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null) {
             RequestContext currentContext = RequestContext.getCurrentContext();
-            //String username = authentication.getName(),
-            //        authorities = CollectionUtil.join(authentication.getAuthorities(), ",");
-            String username = "admin",
-                    authorities = "admin,ROLE_USER";
+            String username = authentication.getName(),
+                    authorities = CollectionUtil.join(authentication.getAuthorities(), ",");
+//            String username = "admin",
+//                    authorities = "admin,ROLE_USER";
             logger.debug("username:{}, authorities:{}", authentication.getName(), CollectionUtil.join(authentication.getAuthorities(), ","));
             currentContext.addZuulRequestHeader(SecurityConstant.USER_HEADER, username);
             currentContext.addZuulRequestHeader(SecurityConstant.ROLE_HEADER, authorities);

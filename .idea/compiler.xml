@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mental-health-auth" />
+        <module name="mental-health-zipkin" />
+        <module name="mental-health-eureka" />
+        <module name="mental-health-exam" />
+        <module name="mental-health-admin" />
+        <module name="mental-health-user" />
+        <module name="mental-health-gateway" />
+        <module name="mental-health-common" />
+        <module name="mental-health-config" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
